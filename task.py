@@ -36,3 +36,34 @@ for i in range(50):
 
 
 
+#Q) write a prgm to create a calculator
+
+#   enter a no:
+ #  enter a no:
+  # choose option(+,-,*,/):
+   #result:    
+
+
+num1 =int(input("Enter a no:"))
+num2 =int(input("Enter a no:"))
+
+op=input("Choose option(+,-,*,/)")
+if op=='+':
+    result=num1+num2
+elif op=='-':
+    result=num1-num2
+elif op=='*':
+    result=num1*num2
+elif op=='/':
+    if  num2 !=0:
+        result=num1/num2  
+    else:
+        print("Cannot divide by zero!")
+        exit()
+else:
+    print("Invalid operator!")
+    exit()
+print("Result:",result)                         
+
+
+
