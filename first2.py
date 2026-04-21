@@ -36,12 +36,16 @@
  #    statements
 
 
-a=0
-if a>0:
-    print('Positive number')
-elif a<0:
-    print('Negative number') 
-elif a==0:
-    print("it's Zero")
-else:
-    print('Invalid')           
+#a=0
+#if a>0:
+ #   print('Positive number')
+#elif a<0:
+ #   print('Negative number') 
+#elif a==0:
+ #   print("it's Zero")
+#else:
+ #   print('Invalid')           
+
+
+
+
