@@ -1,16 +1,16 @@
 #import random
 #import string
 #fname=['amal','arjun','arun','binu','beena','beema','biju','catherine','diana','deepak','deepu',
-       "sera","anu", "manu", "ziya", "ayshaa",'deepa','faizal','fathima','githin','githesh','gireesh','gopu','gopika','hari','hareesh',
-       'harshith','hema','hemanth','jaya','jeeva','karthik','keerthi','karthika','kashi','leela',
-       'manu','mohan','meenu','meera','noyal','navya','navneeth','nimiya','prakash','preeja','prejul',
-       'pramod','roshan','rini','rimisha','rafi','sona','sana','sanu','susan','sanal','thomas','tom',
-       'vinu','vimal','vihan','varun','wazeem','ziyad']
+   #    "sera","anu", "manu", "ziya", "ayshaa",'deepa','faizal','fathima','githin','githesh','gireesh','gopu','gopika','hari','hareesh',
+    #   'harshith','hema','hemanth','jaya','jeeva','karthik','keerthi','karthika','kashi','leela',
+     #  'manu','mohan','meenu','meera','noyal','navya','navneeth','nimiya','prakash','preeja','prejul',
+      # 'pramod','roshan','rini','rimisha','rafi','sona','sana','sanu','susan','sanal','thomas','tom',
+       #'vinu','vimal','vihan','varun','wazeem','ziyad']
 #lname=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','r','s','t','u','v','w']
 #place=['palarivattom','kaloor','edappally','kakkanad','north','south','menaka','fortkochi',
-       'vytila','aluva','paravoor','vypin','thevara','kalamasery','thripunithura','thrissur',
-       'cherai','vennala','vaduthala','pachalam','angamali','athani','pookkattupady','pallikara',
-       'kadamakudy','varapuzha','kadavantha','erroor','thiruvankulam']
+     #  'vytila','aluva','paravoor','vypin','thevara','kalamasery','thripunithura','thrissur',
+    #'cherai','vennala','vaduthala','pachalam','angamali','athani','pookkattupady','pallikara',
+     #  'kadamakudy','varapuzha','kadavantha','erroor','thiruvankulam']
 
 #for i in range(50):
  #   first = random.choice(fname)
@@ -72,3 +72,12 @@
    #   if your usage is above 200 pay 5 rupees / unit above 200 unit
 
 
+units = int(input("Enter electricity usage(units):"))
+bill=0
+if units<=100:
+       bill=0
+elif units <=200:
+       bill = (units - 100)*2
+else:
+       bill= (100*2) + (units-200)*5
+print("Electricity Bill =  ", bill)              
