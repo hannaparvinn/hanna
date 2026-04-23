@@ -87,7 +87,7 @@
 #Q) 5 qust in employee file
 
 
- #1)find employees whose salary is above 50000 and below 80000
+
 
 import pandas as pd
 employeeTable = pd.read_csv('employee.csv') 
@@ -95,22 +95,16 @@ employeeTable = pd.read_csv('employee.csv')
 #result = employeeTable[(employeeTable['salary']>=50000) & (employeeTable['salary']<=80000)]
 #print(result)
 
-#2) find employees whose age is between 25 and 30
-
 #result = employeeTable[employeeTable['age'].between(25,30)]
 #print(result)
 
-#3) find employees who work in IT department and have experience greater than 5 years
 
 #result = employeeTable[(employeeTable['dept'] == 'IT') & (employeeTable['exp'] >5)]
 #print(result)
 
-#4) find employees from kochi or hyderbad location
 
 #result = employeeTable[(employeeTable['location'] == 'Kochi') | (employeeTable['location'] == 'Hyderbad')]
 #print(result)
-
-#5) find employees whose age is between 28 and 35 and salary is between 60000 and 90000
 
 result = employeeTable[(employeeTable['age'].between(28,35)) & (employeeTable['salary'].between(60000,90000))]
 print(result)
