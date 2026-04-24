@@ -1,5 +1,5 @@
-import pandas as pd
-studentsTable = pd.read_csv("student_performance.csv")
+# import pandas as pd
+# studentsTable = pd.read_csv("student_performance.csv")
 
 
 
@@ -60,15 +60,26 @@ studentsTable = pd.read_csv("student_performance.csv")
 
 #9)find total students with internet access age wise
 
-# result = studentsTable[studentsTable['internet_access'] == 'Yes'].groupby('age').agg(
-#     totalstudent_id =('student_id','count') 
+# result = studentsTable[studentsTable['internet_access'] == 'Yes'].groupby('age').agg (  
+# totalstudent_id =('student_id','count') 
 # )
 # print(result) 
 
-#10) find average score and study hours of students attendance above 70 age wise
+# #10) find average score and study hours of students attendance above 70 age wise
 
-result = studentsTable[studentsTable['attendance_rate']>70].groupby('age').agg(
-    avgfinal_score = ('final_score','mean'),
-    avgstudy_hours_per_week = ('study_hours_per_week','mean')
-)
-print(result)
+# result = studentsTable[studentsTable['attendance_rate']>70].groupby('age').agg(
+#     avgfinal_score = ('final_score','mean'),
+#     avgstudy_hours_per_week = ('study_hours_per_week','mean')
+# )
+# print(result)
+
+import pandas as pd
+studentsTable = pd.read_csv("student_performance.csv")
+import matplotlib.pyplot as plt
+
+plt.plot(studentsTable["age"],studentsTable["final_score"],marker='o')
+plt.title("Age vs Final Score")
+plt.xlabel("Age")
+plt.ylabel("Final Score")
+plt.show()
+
